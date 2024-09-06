@@ -1,0 +1,174 @@
+@charset "UTF-8";
+body{
+	background-image: url(pnqy_7ihu_230207.jpg);
+	  background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment:fixed;
+      
+}
+.button-container {
+	margin-top:15px;
+}
+button:hover {
+	background-color: #80ff00;
+}
+.weather-container {
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+}
+.container {
+	background-color : #b9c5f5;;
+	border-radius:-250%;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding:-10%;
+	width: 40%;
+	margin-top:900px;
+	margin-left:350px;
+}
+
+.weather-input {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: -40%;
+}
+
+.city-input {
+	flex: 1;
+	padding: 3px;
+	border-radius: 2px;
+	border: 0.3px solid #ccc;
+	font-size: 6px;
+	margin-top: 10px;
+}
+
+.search-btn,
+.location-btn {
+	background-color: #4ab0f7;
+	border: none;
+	color: white;
+	padding: 10px 15px;
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-top: 10px;
+	cursor: pointer;
+	font-size: 8px;
+	transition: background-color 0.3s;
+}
+
+.search-btn:hover,
+.location-btn:hover {
+	background-color: #06e46e;
+}
+
+.weather-data {
+	text-align: center;
+	margin-top: 205px;
+}
+
+.weather-data h6 {
+	margin-top: -2%;
+	font-size: 1.7rem;
+	font-weight: 10;
+	margin-left: 100px;
+
+}
+
+.current-weather .icon {
+	text-align: center;
+	margin-top: 22%;
+	margin-left:65%;
+}
+
+.current-weather .icon img {
+	max-width: 100px;
+	margin-top: -100%;
+	margin-left: -20%;
+}
+
+.current-weather .icon h6 {
+	margin-top: -20%;
+	text-transform: capitalize;
+}
+
+.current-weather .details h6 {
+	font-size: 8px;
+	color: #333;
+	margin-left: -75%;
+}
+
+.days-forecast {
+	margin-top: 3%;
+}
+
+.days-forecast h2 {
+	margin-bottom:2%;
+	font-size: 29px;
+	color: #4ab0f7;
+}
+
+.weather-cards {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.card {
+	background-color: #f7f9fb;
+	border-radius: 30px;
+	padding: 8px;
+	text-align: center;
+	width: 30%;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+	margin: 10px 0;
+	font-size: 16px;
+	color: #333;
+}
+
+.card h6 {
+	margin: 5px 0;
+	font-size: 8px;
+	color: #555;
+}
+
+.card .icon {
+	font-size: 20px;
+	color: #4ab0f7;
+	margin-bottom: 2px;
+}
+/* Media Query for Mobile devices */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        
+    }
+
+    .forecast {
+        display: block;
+        text-align: center;
+        
+    }
+
+    .forecast .day {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Media Query for very small screens (e.g., older phones) */
+@media only screen and (max-width: 480px) {
+    .header {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .forecast .day {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
